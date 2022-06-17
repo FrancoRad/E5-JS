@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: no-repeat center/100% url("../img/pizzeria.jpg");
+    overflow: hidden;
+}
+.titulo{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Vegur, 'PT Sans', Verdana, sans-serif;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px;
+}
+.text{
+    padding: 12px;
+    background-color: white;
+    mix-blend-mode: screen;
+}
+.contenedor{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+    height: 120px;
+    width: 650px;
+    border-radius: 1em;
+    border-width: 2px;
+    border-color: black;
+    background-color:rgb(204, 186, 150);
+    opacity: .7;
+    margin-bottom: 1em;
+}
+.centro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.lado{
+    width: auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h3{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+.letra{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+
+/*BUTTON*/
+.number{
+    height: 25px;
+    margin-top: 1px;
+}
+.check{
+    content: "\2714";
+}
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.button{
+    position: relative;
+    width: 70px;
+    height: 25px;
+    font-size: 10px;
+    background-color:rgb(204, 186, 150);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: width .5s;
+    border-radius: .5s;
+}
+.button *{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .25s;
+}   
+.icon{
+    opacity: 0;
+}
+.button:focus{
+    width: 30px;
+    background-color: #44c08a;
+    border-radius: 50%;
+}
+.button:focus .textSubmit{
+    opacity: 0;
+}
+.button:focus .icon{
+    opacity: 1;
+    transition-delay: .5s;
+}

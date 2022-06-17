@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/check?s=duotone">
+</head>
+<body>
+    <div class="titulo">
+        <h1 class="text">PIZZERIA DIGITAL</h1>
+    </div>
+    <div class="contenedor" id="contenedor">
+        <div class="card" id="card">
+            <div class="centro" id="izquierda">
+                <div class="lado a">
+                    <p class="letra" id="p"></p>
+                </div>
+                <div class="lado b" id="derecha">
+                    <h2 class="letra" id="h2"></h2>
+                    <h4 class="letra" id="h4"></h4>
+                    <h5 class="letra" id="h5"></h5>
+                </div>
+                <div id="imagenPizza"></div>
+            </div>
+        </div>
+        <div class="contenedorEnviar">
+            <h3 id="h3"></h3>
+            <form action="" >
+                <input class="number" type="number" name="number" id="numero" min="1" placeholder="Ingrese el id de la Pizza">
+                <button class="button" type="button"  onclick="getValueInput()"> 
+                    <span class="textSubmit">submit</span>
+                    <strong><span class="check icon">&#10004;</span></strong>
+                </button> 
+            </form>
+        </div> 
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
