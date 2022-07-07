@@ -5,6 +5,7 @@
 body{
     background: no-repeat center/100% url("../img/pizzeria.jpg");
     height: 100vh;
+    width: 100%;
     overflow: hidden;
 }
 .titulo{
@@ -13,29 +14,150 @@ body{
     justify-content: center;
     align-items: center;
     font-family: Vegur, 'PT Sans', Verdana, sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     text-shadow: 2px 2px 2px;
 }
+
+
+/* buscador */
+form{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    
+}
+.flexbox{
+    font-family: Roboto, sans-serif;
+    background: #f2eee3;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+.buscador{
+    margin: 20px;
+}
+.buscador > span{
+    color: red;
+    margin-bottom: 15px;
+}
+.buscador > div{
+    display: inline-block;
+    position: relative;
+}
+.buscador > div::after{
+    content: "";
+    background: black;
+    width: 4px;
+    height: 20px;
+    position: absolute;
+    top: 40px;
+    right: 2px;
+    transform: rotate(135deg);
+}
+.buscador > div > input{
+    color: black;
+    font-size: 10px;
+    background: transparent;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    border: solid 3px black;
+    outline: none;
+    border-radius: 35px;
+    transition: width 0.5s;
+}
+.buscador > div > input::placeholder{
+    color: black;
+    opacity: 0;
+    transition: opacity 150ms ease-out;
+}
+.buscador > div > input:focus::placeholder{
+    opacity: 1;
+}
+.buscador > div > input:focus, .buscador > div > input:not(:placeholder-shown){
+    width: 250px;
+}
+
+/* card */
 .text{
     padding: 12px;
-    background-color: white;
+    background: #f2eee3;
     mix-blend-mode: screen;
 }
 .letra{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
+    color: black;
 }
-
 .cards {
     display: flex;
     justify-content: space-around;
-
     flex-wrap: wrap;
-    height: 300px;
+    height: 100%;
     width: auto;
-  }
-  .cardImg {
-    width: 200px;
-    height: 200px;
+}
+.card{
+    background: #f2eee3;
+    border-radius: 15px;
+    border: solid 2px black;
+}
+.cardImg {
+    width: 180px;
+    height: 180px;
+    border-radius: 10px 10px 0px 0px;
+}
+.cardInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    border-bottom: solid 2px black;
+    border-radius: 3px;
+}
+ul{
+    list-style-type: none;
+    font-family: cursive, sans-serif;
+}
+p{
+    font-size: large;
+    color: rgb(226, 83, 83);
+}
+
+/* Error */
+.error{
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+.conteinerError{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    opacity: .7;
+}
+
+.claseError{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    height: 100px;
+    background-color: #f2eee3;
+    border: double 2px transparent ;
     border-radius: 10px;
-  }
+}
+h4{
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    text-shadow: red -3px 0, cyan 3px 0;
+    color: black;
+}

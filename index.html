@@ -13,15 +13,23 @@
         <h1 class="text">PIZZERIA DIGITAL</h1>
     </div>
 
-        <form class="navBar__form">
-            <input type="nombre" class="input" id="buscar">
-            <button type="submit" class="boton">Buscar</button>
+        <form class="form">
+            <div class="flexbox">
+                <div class="buscador">
+                    <span>
+                        Click en el icono para buscar
+                    </span>
+                    <div>
+                        <input type="text" class="input" id="buscar" placeholder="Elija la pizza">
+                    </div>
+                </div>
+            </div> 
         </form>
         <main>
             <section class="error letra"></section>
             <section class="cards letra"></section>
         </main>
 
-    <script src="./app.js" type="module"></script>
+    <script src="./js/app.js" type="module"></script>
 </body>
 </html>
